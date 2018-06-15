@@ -17,15 +17,10 @@ cam.start()
 #setup window
 windowSurfaceObj = pygame.display.set_mode((width,height),1,16)
 pygame.display.set_caption('Camera')
-
-#take a picture
-
-cam.stop()
-
 #display the picture
-catSurfaceObj = image
 while True:
     image = cam.get_image()
+    catSurfaceObj = image
     windowSurfaceObj.blit(catSurfaceObj,(0,0))
     pygame.display.update()
     time.sleep(.300)
