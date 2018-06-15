@@ -23,6 +23,6 @@ while True:
     catSurfaceObj = image
     windowSurfaceObj.blit(catSurfaceObj,(0,0))
     pygame.display.update()
-    time.sleep(.300)
+    time.sleep(.30)
 print("temino el programa")
 cam.stop()
