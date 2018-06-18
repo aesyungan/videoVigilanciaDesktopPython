@@ -18,11 +18,16 @@ cam.start()
 windowSurfaceObj = pygame.display.set_mode((width,height),1,16)
 pygame.display.set_caption('Camera')
 #display the picture
+#contador
+num=0
 while True:
+    num=num+1
     image = cam.get_image()
     catSurfaceObj = image
     windowSurfaceObj.blit(catSurfaceObj,(0,0))
     pygame.display.update()
+    print("N:")
+    print(num)
     time.sleep(.30)
 print("temino el programa")
 cam.stop()
