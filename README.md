@@ -7,6 +7,10 @@ instalar pygame
 ```
 sudo apt-get install python3-pygame
 ```
+si tiene python 2.X
+```
+sudo apt-get install python-pygame
+```
 otras dependencias
 
 ```
