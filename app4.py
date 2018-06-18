@@ -26,7 +26,7 @@ while True:
     catSurfaceObj = image
     #windowSurfaceObj.blit(catSurfaceObj,(0,0))
     #pygame.display.update()
-    pygame.image.save(catSurfaceObj,'picture.jpg')
+    pygame.image.save(catSurfaceObj,'picture'+num+'.jpg')
     print("N:")
     print(num)
     time.sleep(.30)
